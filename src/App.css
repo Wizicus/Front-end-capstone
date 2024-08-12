@@ -1,38 +1,371 @@
-.App {
+
+@media screen and (max-width: 400px) {
+  nav.top_nav{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  nav.top_nav .navitems{
+    display: flex;
+    text-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 80%;
+    list-style-type: none;
+    padding: 0;
+  }
+  nav.top_nav .navitem{
+    margin-left: 0px;
+  }
+  #desc {
+    display: flex;
+  }
+  #desc_item2 #desc_img1{
+    margin: none;
+  }
+}
+ h1, h2,h3,h4,h5{
+  font-family: "Markazi";
+ }
+ p, a, li{
+  font-family: "Karla";
+ }
+
+nav.top_nav{
+  white-space: nowrap;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+nav.top_nav *{
+  display: inline;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.logo{
+  max-width: 170px;
+  margin-top: 10px;
+  vertical-align:-70%;
+}
+nav.top_nav .navitems{
+  text-align: center;
+  background-color: white;
+}
+a:link{
+  text-decoration: none;
+}
+a:hover{
+  text-decoration: underline;
+}
+a:active{
+  text-decoration: underline;
+  color:blue;
+}
+a{
+  color: black;
+}
+nav.top_nav .navitem:not(:first-child){
+  margin-left: 20px;
+}
+.navitem{
+  color: black;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+
+.header{
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  background: linear-gradient(#495E57 80%, white 80%);
+  gap: 10%;
+  margin-left: 5%;
+  margin-right: 5%;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  flex-wrap: wrap;
+}
+.header_item{
+  margin: 1%;
+  padding: 1%;
+  width: 350px;
+}
+#header_food{
+  width: 250px;
+  border-radius: 16px;
+  margin-top: 25%;
+}
+#header_img_container{
+  text-align: center;
+}
+button{
+  background-color: #F4CE14;
+  border: none;
+  border-radius: 10px;
+}
+
+button:active{
+  background-color: red;
+}
+
+#header_button{
+  margin-top: 5%;
+  width: 200px;
+  height: 50px;
+}
+.header h1{
+  color: #F4CE14;
+}
+
+.header_text{
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+
+.card_container{
+  display: flex;
+  justify-content: center;
+  border: 5%;
+  flex-wrap: wrap;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.card{
+  border-top: 20px;
+  border: 1px solid;
+  text-align: center;
+  background-color: rgb(240, 236, 236);
+  border: 5%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+  margin-left: 2.5%;
+  position: relative;
+  width: 250px;
+  margin-bottom: 3%;
+}
+
+.card_header_container{
+  display: flex;
+  justify-content: space-between;
+  margin-left: 5%;
+  margin-right: 5%;
+  align-content: center;
+}
+.card_title{
+  display: inline;
+  font-weight: bold;
+}
+.card_price{
+  display: inline;
+  color: orange;
+}
+.card_description{
+  text-wrap: wrap;
+  text-align: left;
+  margin-left: 5%;
+  margin-right: 5%;
+  margin-bottom: 15%;
+}
+.card_image{
+  max-width: 100%;
+  max-height: 100%;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+
+}
+.card_footer_container *{
+  display: inline;
+}
+.card_footer_container >img{
+  background: transparent;
+  max-width: 10%;
+  vertical-align: middle;
+}
+.card_footer_container{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  margin-bottom: 1%;
+}
+.specials_header_container{
+  display: flex;
+  justify-content: space-around;
+  margin-left: 10%;
+  margin-right: 10%;
+  flex-direction: row;
+  align-items: center;
+  margin-bottom: 2%;
+  margin-top: 2%;
+}
+.specials_header_container *{
+  text-align: center;
+  display: inline;
+}
+.specials_header{
+  color: black;
+}
+.online_menu_button{
+  width: 150px;
+  height: 40px;
+  display: inline;
+}
+
+
+
+.testimonials_container{
+  margin-top: 6%;
+}
+
+.testimonials_header{
+  text-align: center;
+}
+
+.review_container{
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.review{
+  border: 1px solid;
+  width: 230px;
+  text-align: center;
+  margin-left: 1%;
+  margin-right: 1%;
+  margin-bottom: 5%;
+  margin-top: 1%;
+}
+
+.review_img_container *{
+  display: inline;
+}
+.review_name{
+  vertical-align: 80%;
+  margin-left: 5%;
+}
+
+.review_img{
+  max-width: 50px;
+}
+.review_text{
+  text-wrap: wrap;
+}
+.review_rating{
+  text-emphasis: bold;
+}
+
+.desc{
+  display: grid;
+  grid-template-columns: 20% 20% 25% 25%;
+  gap: 1vw;
+  background-color: #495E57;
+  padding: 10px;
+  margin-left: 5%;
+  margin-right: 5%;
+  justify-content: center;
+  align-content: center;
+  margin-bottom: 5%;
+  flex-wrap: wrap;
+}
+
+.desc_item{
+  height: 450px;
+}
+.desc_item h1{
+  font-size: 3rem;
+  margin-bottom: -4%;
+  color: #F4CE14;
+}
+.desc_item h2{
+  color: white;
+}
+.desc_item p {
+  color: white;
+}
+.desc_item * {
+  margin-left: 2%;
+  margin-right: 1%
+}
+
+#desc_item1{
+  grid-column-start:1 ;
+  grid-column-end: 3;
+}
+#desc_item2{
+  grid-column: 3/span 2;
+  align-content: center;
+  text-align: center;
+  position: relative;
+}
+
+.desc_item img{
+  width: 300px;
+  border-radius: 16px;
+  border: 1px solid;
+}
+.desc_img1{
+  margin-bottom: 2%;
+  z-index: -1;
+}
+.desc_img2{
+  margin-left: -3%;
+  z-index: 1;
+}
+
+
+
+
+.footer_container{
+  border: 1px solid;
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  justify-content: space-evenly;
+  background-color: #495E57;
+  gap: 10px;
+}
+.footer_item{
+  color: white;
+  width: 15vw;
+  padding: 10px;
+  margin-bottom: 5%;
+  margin-top: 5%;
+}
+
+.footer_item a{
+  color: white;
+}
+
+.footer_item ul{
+  margin-left: -10%;
+  margin-top: -8%;
+}
+.footer_item ul li{
+  margin-top: 2%;
+}
+
+.footer_nav_ul{
+  display: flex;
+  flex-direction: column;
+  margin-left: -10%;
+  margin-top: -5%;
+}
+#footer_img_container{
+  text-align: center;
+}
+#footer_img_container img{
+  max-width: 10vw;
+}
+.footer_item a{
+  color:#F4CE14;
+}
+
+@media screen and (max-width: 400px) {
+  .footer_container{
+    display: flex;
+    flex-wrap: wrap;
   }
-  to {
-    transform: rotate(360deg);
+  div.footer_item{
+    width: 40%;
+  }
+  div.footer_item ul{
+    padding-left: 20px;
+  }
+  #footer_img_container img{
+    max-width: 100px;
   }
 }
